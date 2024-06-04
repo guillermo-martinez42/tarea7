@@ -1,0 +1,10 @@
+#contenido{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    .control{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

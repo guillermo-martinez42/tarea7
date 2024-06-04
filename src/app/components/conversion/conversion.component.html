@@ -1,0 +1,19 @@
+<p>conversion works!</p>
+<h1>Ingrese temperatura</h1>
+
+<div id="contenido">
+    <div class="control" >   
+        <label for="temperatura">Temperauta</label>
+        <input type="number" [formControl]="temperatura" name="temperatura" id="">
+    </div>
+    <select class="control" [formControl]="grados" >
+        <option value="celsius">Celcius</option>
+        <option value="far" selected>Farenheit</option>
+    </select  >
+    <button (click)="grabarTemp()" >GRABAR</button>
+
+    <app-listado [temperaturas]="temperaturas" (borrarProducto)="borrarProducto($event)" ></app-listado>
+
+</div>
+
+

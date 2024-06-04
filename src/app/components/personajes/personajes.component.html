@@ -1,0 +1,17 @@
+<p>personajes works!</p>
+
+
+<div id="contenido">
+    <div> <h1>Elegir equipo</h1> </div>
+    <select class="control" [formControl]="personaje" >
+        <option value="ferrari">Ferrari</option>
+        <option value="lotus" selected>Lotus</option>
+        <option value="mclaren">McLaren</option>
+        <option value="williams" selected>Williams</option>
+    </select  >
+    <button (click)="mostrar(personaje.value)" >Show</button>
+
+<app-imagenes [personaje]="personaje.value" ></app-imagenes>
+
+<img [src]="personaje.value" alt="Character Image">
+</div>

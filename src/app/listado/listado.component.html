@@ -1,0 +1,12 @@
+<p>listado works!</p>
+
+<ul>
+    @for (valor of temperaturas; track valor.far){
+        <li>
+            {{valor.celcios}} -- {{valor.far}} - <button (click)="borrar(valor)">borrar</button>
+
+        </li>
+
+    }
+</ul>
+
